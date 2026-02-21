@@ -4,13 +4,18 @@
 }
 
 .section::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(to bottom, transparent, var(--border), transparent);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--border),
+    transparent
+  );
 }
 
 .container {
@@ -100,7 +105,8 @@
   gap: 1.2rem;
 }
 
-.skill {}
+.skill {
+}
 
 .skillMeta {
   display: flex;
@@ -159,9 +165,18 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 5rem 1.5rem;
+    padding: 5rem 1.25rem;
   }
+
+  .title {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.5rem;
   }
 }

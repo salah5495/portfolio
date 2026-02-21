@@ -46,7 +46,7 @@
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 10px;
   top: 20px;
@@ -74,7 +74,7 @@
 }
 
 .dot::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 4px;
   border-radius: 50%;
@@ -270,7 +270,11 @@
 }
 
 .leaderCard {
-  background: linear-gradient(135deg, rgba(0,229,255,0.04), rgba(123,97,255,0.04));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 229, 255, 0.04),
+    rgba(123, 97, 255, 0.04)
+  );
   border: 1px solid var(--border);
   padding: 1.75rem;
   border-radius: 2px;
@@ -321,19 +325,71 @@
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: 5rem 1.5rem;
+    padding: 5rem 1.25rem;
   }
+
+  .title {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  /* Timeline adjustments */
+  .timeline::before {
+    left: 8px;
+  }
+
+  .item {
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .dot {
+    width: 17px;
+    height: 17px;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
   .cardTop {
     flex-direction: column;
+    gap: 0.75rem;
   }
+
   .meta {
     align-items: flex-start;
     flex-direction: row;
-    gap: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .highlights li {
+    font-size: 0.82rem;
+  }
+
+  /* Sidebar cards */
+  .eduCard,
+  .leaderCard {
+    padding: 1.25rem;
+  }
+
+  .eduDegree {
+    font-size: 0.9rem;
   }
 }
