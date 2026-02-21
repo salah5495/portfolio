@@ -50,14 +50,6 @@ portfolio/
 - **Fonts**: Syne (display/headings) + DM Sans (body) + DM Mono (code/labels)
 - **Layout**: CSS Grid, CSS Modules, CSS Custom Properties
 
-## 🔧 Customization
-
-1. **Personal info**: Update `Hero.jsx`, `Contact.jsx` with your links
-2. **Projects**: Edit the `projects` array in `Projects.jsx`
-3. **Experience**: Edit the `experiences` array in `Experience.jsx`
-4. **Skills**: Edit the `skillGroups` array in `Skills.jsx`
-5. **Colors**: Update CSS variables in `index.css`
-
 ## 📦 Tech Stack
 
 - React 18
