@@ -1,6 +1,6 @@
 # Abdullahi Salah — Portfolio
 
-A stunning,  portfolio built with **React + Vite**.
+A stunning portfolio built with **React + Vite**.
 
 ## 🚀 Quick Start
 
